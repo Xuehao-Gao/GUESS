@@ -1,5 +1,3 @@
-# MLD Motion Latent Diffusion Models
-
 [![PWC](httpsimg.shields.ioendpoint.svgurl=httpspaperswithcode.combadgeguess-gradually-enriching-synthesis-for-textmotion-synthesis-on-humanml3d)](httpspaperswithcode.comsotamotion-synthesis-on-humanml3dp=guess-gradually-enriching-synthesis-for-text)
 
 ### [GUESS GradUally Enriching SyntheSis for Text-Driven Human Motion Generation](httpsarxiv.orgpdf2401.02142.pdf)  IEEE TVCG🔥
