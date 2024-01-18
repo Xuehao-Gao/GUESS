@@ -1,4 +1,4 @@
-[![PWC](httpsimg.shields.ioendpoint.svgurl=httpspaperswithcode.combadgeguess-gradually-enriching-synthesis-for-textmotion-synthesis-on-humanml3d)](httpspaperswithcode.comsotamotion-synthesis-on-humanml3dp=guess-gradually-enriching-synthesis-for-text)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/guess-gradually-enriching-synthesis-for-text/motion-synthesis-on-humanml3d)](https://paperswithcode.com/sota/motion-synthesis-on-humanml3d?p=guess-gradually-enriching-synthesis-for-text)
 
 ### [GUESS GradUally Enriching SyntheSis for Text-Driven Human Motion Generation](httpsarxiv.orgpdf2401.02142.pdf)  IEEE TVCG🔥
 
