@@ -50,7 +50,7 @@ Datasets  Google Cloud
 ## 💻 Train your own models
 
 <details>
-  <summary><b>WIP</b></summary>
+  <summary><b>Training guidance</b></summary>
 
 
 ### 1. Tran a VAE model for each skeleton scale
@@ -89,7 +89,7 @@ python -m test --cfg configsconfig_mld_humanml3d.yaml --cfg_assets configsassets
 ## ▶️ Demo
 
 <details>
-  <summary><b>WIP</b></summary>
+  <summary><b>Text-to-motion</b></summary>
 
 We support text file or keyboard input, the generated motions are npy files.
 Please check the `configsasset.yaml` for path config, TEST.FOLDER as output folder.
@@ -118,7 +118,7 @@ The outputs
 ## 👀 Visualization
 
 <details>
-  <summary><b>WIP</b></summary>
+  <summary><b>Render SMPL</b></summary>
 
 ### 1. Setup blender - WIP
 
