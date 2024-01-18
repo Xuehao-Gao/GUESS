@@ -1,6 +1,6 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/guess-gradually-enriching-synthesis-for-text/motion-synthesis-on-humanml3d)](https://paperswithcode.com/sota/motion-synthesis-on-humanml3d?p=guess-gradually-enriching-synthesis-for-text)
 
-### [GUESS GradUally Enriching SyntheSis for Text-Driven Human Motion Generation](httpsarxiv.orgpdf2401.02142.pdf)  IEEE TVCG🔥
+### [GUESS:GradUally Enriching SyntheSis for Text-Driven Human Motion Generation](httpsarxiv.orgpdf2401.02142.pdf) | IEEE TVCG🔥
 
  GradUally Enriching SyntheSis (GUESS) is a powerful progressive text-to-motion genration strategy. It develops a cascaded latent diffusion model to improve motion realism and diversity.
 
@@ -49,8 +49,8 @@ Datasets  Google Cloud
 
 ## 💻 Train your own models
 
-details
-  summarybWIPbsummary
+<details>
+  <summary><b>WIP</b></summary>
 
 
 ### 1. Tran a VAE model for each skeleton scale
@@ -83,13 +83,13 @@ Then, run the following command
 python -m test --cfg configsconfig_mld_humanml3d.yaml --cfg_assets configsassets.yaml
 ```
 
-details
+</details>
 
 
 ## ▶️ Demo
 
-details
-  summarybText-to-motionbsummary
+<details>
+  <summary><b>WIP</b></summary>
 
 We support text file or keyboard input, the generated motions are npy files.
 Please check the `configsasset.yaml` for path config, TEST.FOLDER as output folder.
@@ -112,13 +112,13 @@ The outputs
 
 - `npy file` the generated motions with the shape of (nframe, 22, 3)
 - `text file` the input text prompt
-details
+</details>
 
 
 ## 👀 Visualization
 
-details
-  summarybDetails for Renderingbsummary
+<details>
+  <summary><b>WIP</b></summary>
 
 ### 1. Setup blender - WIP
 
@@ -159,7 +159,7 @@ optional parameters
 
 - `--mode=video` render mp4 video
 - `--mode=sequence` render the whole motion in a png image.
-details
+</details>
 
 
 ## 📌 Citation
