@@ -1,6 +1,6 @@
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/guess-gradually-enriching-synthesis-for-text/motion-synthesis-on-humanml3d)](https://paperswithcode.com/sota/motion-synthesis-on-humanml3d?p=guess-gradually-enriching-synthesis-for-text)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/guess-gradually-enriching-synthesis-for-text/motion-synthesis-on-humanml3d)](https://paperswithcode.com/sota/motion-synthesis-on-humanml3d?p=guess-gradually-enriching-synthesis-for-text) [![Journal](http://img.shields.io/badge/IEEE_TVCG-2024-FFD93.svg)](https://ieeexplore.ieee.org/document/10399852)
 
-### [GUESS:GradUally Enriching SyntheSis for Text-Driven Human Motion Generation](httpsarxiv.orgpdf2401.02142.pdf) | IEEE TVCG🔥
+### [GUESS:GradUally Enriching SyntheSis for Text-Driven Human Motion Generation](httpsarxiv.orgpdf2401.02142.pdf)🔥
 
  GradUally Enriching SyntheSis (GUESS) is a powerful progressive text-to-motion genration strategy. It develops a cascaded latent diffusion model to improve motion realism and diversity.
 
@@ -42,10 +42,10 @@ bash prepare/download_t2m_evaluators.sh
 For convenience, you can download the datasets we processed directly. Please cite their oroginal papers if you use these datasets.
 
 
-Datasets  Google Cloud                                        
------------------------------------------------------------------------------------------------------------
- HumanML3D  [Download](httpsdrive.google.comdrivefolders1jjwwtyv6_rZzY7Bz60dEpOKIK9Fwh95Susp=drive_link) 
- KIT  [Download](httpsdrive.google.comdrivefolders1dh7zcwDz2M4yaE1Q9LWCHzghG-PWAkO4usp=drive_link) 
+| Datasets  |                                            Google Cloud                                             |
+| :-------: | :-------------------------------------------------------------------------------------------------: |
+| HumanML3D | [Download](https://drive.google.com/drive/folders/1jjwwtyv6_rZzY7Bz60dEpOKIK9Fwh95S?usp=drive_link) |
+|    KIT    | [Download](https://drive.google.com/drive/folders/1dh7zcwDz2M4yaE1Q9LWCHzghG-PWAkO4?usp=drive_link) |
 
 ## 💻 Train your own models
 
