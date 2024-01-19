@@ -28,14 +28,14 @@ We test our code on Python 3.9.12 and PyTorch 1.12.1.
 Run the script to download dependencies materials
 
 ```
-bash preparedownload_smpl_model.sh
-bash prepareprepare_clip.sh
+bash prepare/download_smpl_model.sh
+bash prepare/prepare_clip.sh
 ```
 
 For Text to Motion Evaluation
 
 ```
-bash preparedownload_t2m_evaluators.sh
+bash prepare/download_t2m_evaluators.sh
 ```
 
 ### 3. Datasets
@@ -55,32 +55,31 @@ Datasets  Google Cloud
 
 ### 1. Tran a VAE model for each skeleton scale
 
-Please first check the parameters in `configsconfig_vae_humanml3d.yaml`, e.g. `NAME`,`DEBUG`.
+Please first check the parameters in `configs/config_vae_humanml3d.yaml`, e.g. `NAME`,`DEBUG`.
 
 Then, run the following command
 
 ```
-python -m train --cfg configsconfig_vae_humanml3d.yaml --cfg_assets configsassets.yaml --batch_size 64 --nodebug
+python -m train --cfg configs/config_vae_humanml3d.yaml --cfg_assets configs/assets.yaml --batch_size 64 --nodebug
 ```
 
 ### 2. Train a cascaded diffusion model among scales
 
-Please update the parameters in `configsconfig_mld_humanml3d.yaml`, e.g. `NAME`,`DEBUG`,`PRETRAINED_VAE` (change to your `latest ckpt model path` in previous step)
-
+Please update the parameters in `configs/config_mld_humanml3d.yaml`, e.g. `NAME`,`DEBUG`,`PRETRAINED_VAE` (change to your `latest ckpt model path` in previous step)
 Then, run the following command
 
 ```
-python -m train --cfg configsconfig_mld_humanml3d.yaml --cfg_assets configsassets.yaml --batch_size 64 --nodebug
+python -m train --cfg configs/config_mld_humanml3d.yaml --cfg_assets configs/assets.yaml --batch_size 64 --nodebug
 ```
 
 ### 3. Evaluate the model
 
-Please first put the tained model checkpoint path to `TEST.CHECKPOINT` in `configsconfig_mld_humanml3d.yaml`.
+Please first put the tained model checkpoint path to `TEST.CHECKPOINT` in `configs/config_mld_humanml3d.yaml`.
 
 Then, run the following command
 
 ```
-python -m test --cfg configsconfig_mld_humanml3d.yaml --cfg_assets configsassets.yaml
+python -m test --cfg configs/config_mld_humanml3d.yaml --cfg_assets configs/assets.yaml
 ```
 
 </details>
@@ -97,7 +96,7 @@ Please check the `configsasset.yaml` for path config, TEST.FOLDER as output fold
 Then, run the following script
 
 ```
-python demo.py --cfg .configsconfig_mld_humanml3d.yaml --cfg_assets .configsassets.yaml --example .demoexample.txt
+python demo.py --cfg ./configs/config_mld_humanml3d.yaml --cfg_assets ./configs/assets.yaml --example ./demo/example.txt
 ```
 
 Some parameters
@@ -114,51 +113,50 @@ The outputs
 - `text file` the input text prompt
 </details>
 
-
 ## 👀 Visualization
 
 <details>
   <summary><b>Render SMPL</b></summary>
 
-### 1. Setup blender - WIP
+### 1. Set up blender - WIP
 
-Refer to [TEMOS-Rendering motions](httpsgithub.comMathuxTEMOS) for blender setup, then install the following dependencies.
+Refer to [TEMOS-Rendering motions](https://github.com/Mathux/TEMOS) for blender setup, then install the following dependencies.
 
 ```
-YOUR_BLENDER_PYTHON_PATHpython -m pip install -r preparerequirements_render.txt
+YOUR_BLENDER_PYTHON_PATH/python -m pip install -r prepare/requirements_render.txt
 ```
 
 ### 2. (Optional) Render rigged cylinders
 
-Run the following command using blender
+Run the following command using blender:
 
 ```
-YOUR_BLENDER_PATHblender --background --python render.py -- --cfg=.configsrender.yaml --dir=YOUR_NPY_FOLDER --mode=video --joint_type=HumanML3D
+YOUR_BLENDER_PATH/blender --background --python render.py -- --cfg=./configs/render.yaml --dir=YOUR_NPY_FOLDER --mode=video --joint_type=HumanML3D
 ```
 
-### 2. Create SMPL meshes with
+### 2. Create SMPL meshes with:
 
 ```
 python -m fit --dir YOUR_NPY_FOLDER --save_folder TEMP_PLY_FOLDER --cuda
 ```
 
-This outputs
+This outputs:
 
-- `mesh npy file` the generate SMPL vertices with the shape of (nframe, 6893, 3)
-- `ply files` the ply mesh file for blender or meshlab
+- `mesh npy file`: the generate SMPL vertices with the shape of (nframe, 6893, 3)
+- `ply files`: the ply mesh file for blender or meshlab
 
 ### 3. Render SMPL meshes
 
-Run the following command to render SMPL using blender
+Run the following command to render SMPL using blender:
 
 ```
-YOUR_BLENDER_PATHblender --background --python render.py -- --cfg=.configsrender.yaml --dir=YOUR_NPY_FOLDER --mode=video --joint_type=HumanML3D
+YOUR_BLENDER_PATH/blender --background --python render.py -- --cfg=./configs/render.yaml --dir=YOUR_NPY_FOLDER --mode=video --joint_type=HumanML3D
 ```
 
-optional parameters
+optional parameters:
 
-- `--mode=video` render mp4 video
-- `--mode=sequence` render the whole motion in a png image.
+- `--mode=video`: render mp4 video
+- `--mode=sequence`: render the whole motion in a png image.
 </details>
 
 
