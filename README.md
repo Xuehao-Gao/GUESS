@@ -56,7 +56,7 @@ For convenience, you can download the datasets we processed directly. Please cit
   <summary><b>Training guidance</b></summary>
 
 
-### 1. Tran a VAE model for each skeleton scale
+### 1. Train a VAE model for each skeleton scale
 
 Please first check the parameters in `configs/config_vae_humanml3d.yaml`, e.g. `NAME`,`DEBUG`.
 
