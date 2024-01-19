@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<img src="pictures/fig.png" width="900px">
+<img src="pictures/fig.png" width="950px">
 </div>
 
 
