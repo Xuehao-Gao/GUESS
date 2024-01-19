@@ -2,7 +2,10 @@
 
 ### [GUESS:GradUally Enriching SyntheSis for Text-Driven Human Motion Generation](httpsarxiv.orgpdf2401.02142.pdf)🔥
 
- GradUally Enriching SyntheSis (GUESS) is a powerful progressive text-to-motion genration strategy. It develops a cascaded latent diffusion model to improve motion realism and diversity.
+<div align="center">
+
+<img src="pictures/fig.png" width="800px">
+</div>
 
 
 
