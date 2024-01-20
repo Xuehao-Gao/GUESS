@@ -42,7 +42,7 @@ bash prepare/download_t2m_evaluators.sh
 ```
 
 ### 3. Datasets
-For convenience, you can download the datasets we processed directly. Please cite their oroginal papers if you use these datasets.
+For convenience, you can directly download the datasets we processed and put them into `./datasets/`. Please cite their oroginal papers if you use these datasets.
 
 
 | Datasets  |                                           Google Cloud                                            |
