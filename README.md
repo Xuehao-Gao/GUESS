@@ -45,10 +45,10 @@ bash prepare/download_t2m_evaluators.sh
 For convenience, you can download the datasets we processed directly. Please cite their oroginal papers if you use these datasets.
 
 
-| Datasets  |                                            Google Cloud                                             |
-| :-------: | :-------------------------------------------------------------------------------------------------: |
-| HumanML3D | [Download](https://drive.google.com/drive/folders/1jjwwtyv6_rZzY7Bz60dEpOKIK9Fwh95S?usp=drive_link) |
-|    KIT    | [Download](https://drive.google.com/drive/folders/1dh7zcwDz2M4yaE1Q9LWCHzghG-PWAkO4?usp=drive_link) |
+| Datasets  |                                           Google Cloud                                            |
+| :-------: | :-----------------------------------------------------------------------------------------------: |
+| HumanML3D | [Download](https://drive.google.com/file/d/1rmnG-R8wTb1sRs0PYp4RRmLg8XH-qSGW/view?usp=drive_link) |
+|    KIT    | [Download](https://drive.google.com/file/d/1IXRBm4qSjLQxp1J3cqv1xd8yb-RQY0Jz/view?usp=drive_link) |
 
 ## 💻 Train your own models
 
