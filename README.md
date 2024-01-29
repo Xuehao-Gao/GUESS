@@ -50,10 +50,8 @@ For convenience, you can directly download the datasets we processed and put the
 | HumanML3D | [Download](https://drive.google.com/file/d/1rmnG-R8wTb1sRs0PYp4RRmLg8XH-qSGW/view?usp=drive_link) |
 |    KIT    | [Download](https://drive.google.com/file/d/1IXRBm4qSjLQxp1J3cqv1xd8yb-RQY0Jz/view?usp=drive_link) |
 
-## 💻 Train your own models
+## 💻 Train your own GUESS
 
-<details>
-  <summary><b>Training guidance</b></summary>
 
 
 ### 1. Train a VAE model for each skeleton scale
@@ -66,7 +64,7 @@ Then, run the following command
 python -m train --cfg configs/config_vae_humanml3d.yaml --cfg_assets configs/assets.yaml --batch_size 64 --nodebug
 ```
 
-### 2. Train a cascaded diffusion model among scales
+### 2. Train a cascaded latent diffusion model among multiple scales
 
 Please update the parameters in `configs/config_mld_humanml3d.yaml`, e.g. `NAME`,`DEBUG`,`PRETRAINED_VAE` (change to your `latest ckpt model path` in previous step)
 Then, run the following command
@@ -85,13 +83,8 @@ Then, run the following command
 python -m test --cfg configs/config_mld_humanml3d.yaml --cfg_assets configs/assets.yaml
 ```
 
-</details>
-
 
 ## ▶️ Demo
-
-<details>
-  <summary><b>Text-to-motion</b></summary>
 
 We support text file or keyboard input, the generated motions are npy files.
 Please check the `configsasset.yaml` for path config, TEST.FOLDER as output folder.
@@ -114,12 +107,9 @@ The outputs
 
 - `npy file` the generated motions with the shape of (nframe, 22, 3)
 - `text file` the input text prompt
-</details>
 
 ## 👀 Visualization
 
-<details>
-  <summary><b>Render SMPL</b></summary>
 
 ### 1. Set up blender - WIP
 
@@ -160,7 +150,6 @@ optional parameters:
 
 - `--mode=video`: render mp4 video
 - `--mode=sequence`: render the whole motion in a png image.
-</details>
 
 
 ## 📌 Citation
@@ -177,7 +166,7 @@ If you find our code or paper helps, please consider citing
 
 ## Acknowledgments
 
-Thanks to [MLD](httpsgithub.comChenFengYemotion-latent-diffusion), our code is partially borrowing from them.
+Thanks to [MLD](https://github.com/ChenFengYe/motion-latent-diffusion), our code is partially borrowing from them.
 
 ## License
 
